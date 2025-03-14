@@ -36,6 +36,11 @@ void right(int time) {
     msleep(time);
 }
 
+void back_left(int time) {
+    mav(1, -1000);
+    mav(3, -1000);
+    msleep(1000);
+}
 
 void turn_left(int time) {
 	mav(0, -1000);
