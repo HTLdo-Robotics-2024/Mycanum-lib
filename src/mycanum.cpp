@@ -9,6 +9,7 @@ void forward(int time) {
     mav(2, 1000);
     mav(3, 1000);
     msleep(time);
+    ao();
 }
 
 void backward(int time) {
@@ -17,6 +18,7 @@ void backward(int time) {
     mav(2, -1000);
     mav(3, -1000);
     msleep(time);
+    ao();
 }
 
 void left(int time) {
@@ -25,6 +27,7 @@ void left(int time) {
     mav(2, 1000);
     mav(3, -1000);
     msleep(time);
+    ao();
 }
 
 void right(int time) {
@@ -33,6 +36,7 @@ void right(int time) {
     mav(2, -1000);
     mav(3, 1000);
     msleep(time);
+    ao();
 }
 
 
@@ -61,18 +65,8 @@ void turn_angle(int angle) {
     mav(2, -1000 * direction);
     mav(3, -1000 * direction);
     msleep(time);
+    ao();
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
